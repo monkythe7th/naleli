@@ -112,43 +112,43 @@ function timeLineLoader(tle) {
       case "event--2021":
         $.ajax({url:'about/work_exp_2021.txt',success: function(result){
           $('#tlv').html(result);
-          $('#tlv').css('left','0');
+          $('#tlv').css('left','200px');
         }});
         break;
       case "event--2020":
         $.ajax({url:'about/work_exp_2020.txt',success: function(result){
           $('#tlv').html(result);
-          $('#tlv').css('left','0');
+          $('#tlv').css('left','420px');
         }});
         break;
       case "event--2019":
         $.ajax({url:'about/work_exp_2019.txt',success: function(result){
           $('#tlv').html(result);
-          $('#tlv').css('left','200px');
+          $('#tlv').css('left','625px');
         }});
         break;
       case "event--2018":
         $.ajax({url:'about/work_exp_2018.txt',success: function(result){
           $('#tlv').html(result);
-          $('#tlv').css('left','420px');
+          $('#tlv').css('left','840px');
         }});
         break;
       case "event--2015":
         $.ajax({url:'about/work_exp_2015.txt',success: function(result){
           $('#tlv').html(result);
-          $('#tlv').css('left','625px');
+          $('#tlv').css('left','1045px');
         }});
         break;
       case "event--2014":
         $.ajax({url:'about/work_exp_2014.txt',success: function(result){
           $('#tlv').html(result);
-          $('#tlv').css('left','840px');
+          $('#tlv').css('left','1255px');
         }});
         break;
       case "event--2011":
         $.ajax({url:'about/work_exp_2011.txt',success: function(result){
           $('#tlv').html(result);
-          $('#tlv').css('left','1045px');
+          $('#tlv').css('left','1455px');
         }});
         break;
     }

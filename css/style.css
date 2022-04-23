@@ -470,7 +470,7 @@ header ul li {
 	-ms-overflow-x: scroll;
 	    overflow-x: scroll;
     position: relative;
-    height: 350px;
+    height: 75%;
 }
 
 .section--about .time__line--events {
@@ -555,6 +555,7 @@ p.title {
 
 article {
     width: 60%;
+	height: 100%;
     padding: 30px 25px;
     position: absolute;
     right: 0;
