@@ -4,84 +4,84 @@ $(document).ready(function(){
 
   $('.loader').hide(15000);
 
- let winHeight = $(window).height();
+  let winHeight = $(window).height();
 
- $("ul li.option.work__experience").click(function(){
-   $("#article1").show();
-   $("#article2").hide();
-   $("#article3").hide();
-   $("#article4").hide();
-   $("#article5").hide();
- });
+$("ul li.option.work__experience").click(function(){
+  $("#article1").show();
+  $("#article2").hide();
+  $("#article3").hide();
+  $("#article4").hide();
+  $("#article5").hide();
+});
 
- $("ul li.option.key__skills").click(function(){
-   $("#article1").hide();
-   $("#article2").show();
-   $("#article3").hide();
-   $("#article4").hide();
-   $("#article5").hide();
- });
+$("ul li.option.key__skills").click(function(){
+  $("#article1").hide();
+  $("#article2").show();
+  $("#article3").hide();
+  $("#article4").hide();
+  $("#article5").hide();
+});
 
- $("ul li.option.current__education").click(function(){
-   $("#article1").hide();
-   $("#article2").hide();
-   $("#article3").show();
-   $("#article4").hide();
-   $("#article5").hide();
- });
+$("ul li.option.current__education").click(function(){
+  $("#article1").hide();
+  $("#article2").hide();
+  $("#article3").show();
+  $("#article4").hide();
+  $("#article5").hide();
+});
 
- $("ul li.option.career__aim").click(function(){
-   $("#article1").hide();
-   $("#article2").hide();
-   $("#article3").hide();
-   $("#article4").show();
-   $("#article5").hide();
- });
+$("ul li.option.career__aim").click(function(){
+  $("#article1").hide();
+  $("#article2").hide();
+  $("#article3").hide();
+  $("#article4").show();
+  $("#article5").hide();
+});
 
- $("ul li.option.personal__information").click(function(){
-   $("#article1").hide();
-   $("#article2").hide();
-   $("#article3").hide();
-   $("#article4").hide();
-   $("#article5").show();
- });
+$("ul li.option.personal__information").click(function(){
+  $("#article1").hide();
+  $("#article2").hide();
+  $("#article3").hide();
+  $("#article4").hide();
+  $("#article5").show();
+});
 
- /*$.ajax({url:'about/wexp.txt', success: function(result){
-  $('#wexp').html(result);
- }});*/
+/*$.ajax({url:'about/wexp.txt', success: function(result){
+$('#wexp').html(result);
+}});*/
 
 
- if ($(window).width() < 450) {
-    $('body').addClass('sp');
-   let menuView = "<div class=\"menu--section\"><ul></ul></div>";
-   let menuViewInner = $(".page--menu").html();
-   // $("header").append("<span class=\"menu left\" onclick=\"showMenu(this)\"><div class=\"menu--icon bar1\"></div><div class=\"menu--icon bar2\"></div><div class=\"menu--icon bar3\"></div><a href=\"#\" class=\"menu--inner\"></a></span>");
-   $(".main").prepend(menuView);
-   $(".menu--section ul").html(menuViewInner);
-   $.ajax({url:'../contact/sp_contacts.txt',success: function(result){
-      $('.sp .contact').html(result);
-    }});
- } else if ($(window).width() < 1025) {
-    $('body').addClass('tab');
-    $.ajax({url:'../contact/sp_contacts.txt',success: function(result){
-     	$('.tab .contact').html(result);
-    }});
-   } else {
-     $('.header').css('top',winHeight);
-   	$.ajax({url:'../contact/web_contacts.txt',success: function(result){
-      $('.contact').html(result);
-    }});
-   }
+if ($(window).width() < 450) {
+  $('body').addClass('sp');
+  let menuView = "<div class=\"menu--section\"><ul></ul></div>";
+  let menuViewInner = $(".page--menu").html();
+  // $("header").append("<span class=\"menu left\" onclick=\"showMenu(this)\"><div class=\"menu--icon bar1\"></div><div class=\"menu--icon bar2\"></div><div class=\"menu--icon bar3\"></div><a href=\"#\" class=\"menu--inner\"></a></span>");
+  $(".main").prepend(menuView);
+  $(".menu--section ul").html(menuViewInner);
+  $.ajax({url:'../contact/sp_contacts.txt',success: function(result){
+    $('.sp .contact').html(result);
+  }});
+} else if ($(window).width() < 1025) {
+  $('body').addClass('tab');
+  $.ajax({url:'../contact/sp_contacts.txt',success: function(result){
+    $('.tab .contact').html(result);
+  }});
+  } else {
+    $('.header').css('top',winHeight);
+  $.ajax({url:'../contact/web_contacts.txt',success: function(result){
+    $('.contact').html(result);
+  }});
+  }
 
-   $(window).change(function(){
+  $(window).change(function(){
 
-   });
+  });
 
-   $(window).scroll(function(){
-     if ($(document).scrollTop()<winHeight) {
-      $('.header').hide(); 
-    } else {
-      $('.header').show();
+  $(window).scroll(function(){
+    if ($(document).scrollTop()<winHeight) {
+    $('.header').hide(); 
+  } else {
+    $('.header').show();
       // $(document).scrollTop(winHeight);
     }
   });
@@ -102,6 +102,19 @@ function showMenu(x) {
 
 function timeLineLoader(tle) {
   switch(tle.id){
+    
+      case "event--2022":
+        $.ajax({url:'about/work_exp_2022.txt',success: function(result){
+          $('#tlv').html(result);
+          $('#tlv').css('left','0');
+        }});
+        break;
+      case "event--2021":
+        $.ajax({url:'about/work_exp_2021.txt',success: function(result){
+          $('#tlv').html(result);
+          $('#tlv').css('left','0');
+        }});
+        break;
       case "event--2020":
         $.ajax({url:'about/work_exp_2020.txt',success: function(result){
           $('#tlv').html(result);
