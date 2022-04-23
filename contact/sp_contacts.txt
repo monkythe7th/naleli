@@ -1,0 +1,8 @@
+<ul>
+	<!-- <li><a href="https://www.facebook.com/monky.the7th" target="_blank">facebook</a></li> -->
+	<li>call:<a href="tel:+27640422279">+27 64 042 2279</a></li>
+	<!-- <li>call:<a href="tel:+26650755444">+266 5075 5444</a></li> -->
+	<!-- <li>call:<a href="tel:+26668558680">+266 6855 8680</a></li> -->
+	<li><a href="mailto:rnramoeletsi@gmail.com">rnramoeletsi@gmail.com</a></li>
+	<li><a href="https://www.linkedin.com/in/ramoeletsi-naleli-ramoeletsi-133750201/" target="_blank">linkedin</a></li>
+</ul>

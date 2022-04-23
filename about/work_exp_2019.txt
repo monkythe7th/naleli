@@ -1,0 +1,9 @@
+<h5 class="date">2019 May</h5>
+<h3 class="company">OpenLearn</h3>
+<p class="responsibilites">Learning Java, Teaching Web & Java.</p>
+<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+	<li>Java</li>
+</ul>

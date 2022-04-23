@@ -1,0 +1,4 @@
+<h5 class="date">2011 December</h5>
+<h3 class="company">Bloomberg News</h3>
+<h3 class="position">Intern</h3>
+<p class="responsibilities">back checking and proofing articles written by my supervisors, I also did a few odd jobs and wrote an article.</p>

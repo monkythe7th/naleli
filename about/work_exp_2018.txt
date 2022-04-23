@@ -1,0 +1,4 @@
+<h5 class="date">2018 June</h5>
+<h3 class="company">4Fourdy</h3>
+<h3 class="position">Bartender</h3>
+<p class="responsibilites">Bartending</p>

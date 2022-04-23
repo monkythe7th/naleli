@@ -1,0 +1,13 @@
+<div class="time__line" id="timeline">
+	<svg height="5" width="200" >
+		<line x1="0" y1="0" x2="200" y2="0" style="stroke:#333;stroke-width:5" ></line>
+	</svg>
+	<ul class="time__line--events">
+		<li class="event event--2020">2020</li>
+		<li class="event event--2019">2019</li>
+		<li class="event event--2018">2018</li>
+		<li class="event event--2015">2015</li>
+		<li class="event event--2014">2014</li>
+		<li class="event event--2011">2011</li>
+	</ul>
+</div>
