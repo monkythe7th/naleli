@@ -51,26 +51,25 @@ $('#wexp').html(result);
 }});*/
 
 
-if ($(window).width() < 450) {
-  $('body').addClass('sp');
-  let menuView = "<div class=\"menu--section\"><ul></ul></div>";
-  let menuViewInner = $(".page--menu").html();
-  // $("header").append("<span class=\"menu left\" onclick=\"showMenu(this)\"><div class=\"menu--icon bar1\"></div><div class=\"menu--icon bar2\"></div><div class=\"menu--icon bar3\"></div><a href=\"#\" class=\"menu--inner\"></a></span>");
-  $(".main").prepend(menuView);
-  $(".menu--section ul").html(menuViewInner);
-  $.ajax({url:'../contact/sp_contacts.txt',success: function(result){
-    $('.sp .contact').html(result);
-  }});
-} else if ($(window).width() < 1025) {
-  $('body').addClass('tab');
-  $.ajax({url:'../contact/sp_contacts.txt',success: function(result){
-    $('.tab .contact').html(result);
-  }});
+  if ($(window).width() < 450) {
+    $('body').addClass('sp');
+    let menuView = "<div class=\"menu--section\"><ul></ul></div>";
+    let menuViewInner = $(".page--menu").html();
+    // $("header").append("<span class=\"menu left\" onclick=\"showMenu(this)\"><div class=\"menu--icon bar1\"></div><div class=\"menu--icon bar2\"></div><div class=\"menu--icon bar3\"></div><a href=\"#\" class=\"menu--inner\"></a></span>");
+    $(".main").prepend(menuView);
+    $(".menu--section ul").html(menuViewInner);
+    $.ajax({url:'../contact/sp_contacts.txt',success: function(result){
+      $('.sp .contact').html(result);
+    }});
+  } else if ($(window).width() < 1025) {
+    $('body').addClass('tab');
+    $.ajax({url:'../contact/sp_contacts.txt',success: function(result){
+      $('.tab .contact').html(result);
+    }});
   } else {
-    $('.header').css('top',winHeight);
-  $.ajax({url:'../contact/web_contacts.txt',success: function(result){
-    $('.contact').html(result);
-  }});
+    $.ajax({url:'../contact/web_contacts.txt',success: function(result){
+      $('.contact').html(result);
+    }});
   }
 
   $(window).change(function(){
@@ -89,7 +88,7 @@ if ($(window).width() < 450) {
 
 
 
-  $('.section').height(winHeight);
+  // $('.section').height(winHeight);
 
   let tlEvent = $(".time__line--events .event");
 
