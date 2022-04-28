@@ -177,6 +177,9 @@ function hBadge(cert) {
     case "cert__aws":
       $('.section--about #article3 iframe#embedded-badge-e774c874-b199-4a66-a7a3-71cb107a44ea').hide();
       break;
+    case "cert__aws--developer":
+      $('.section--about #article3 iframe#embedded-badge-3dab972c-820b-4833-b762-2251b66324ae').hide();
+      break;
   }
 }
 function loadScreen() {
