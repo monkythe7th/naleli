@@ -652,3 +652,17 @@ article#article2, #article3, #article4, #article5 {
     color: #d0d0d0;
     text-decoration: none;
 }
+
+.badges img.aws__badge {
+	position: absolute;
+}
+
+.badges img#aws__badge--practitioner {
+	bottom: 25px;
+	left: 130px;
+}
+
+.badges img#aws__badge--developer {
+	bottom: 120px;
+	left: 70px;
+}
