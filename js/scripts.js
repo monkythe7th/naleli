@@ -160,8 +160,11 @@ function badge(cert) {
     case "cert__oca":
       $('.section--about #article3 iframe#embedded-badge-5425153a-5f45-4ec5-90f6-14fb1e36e7ed').show();
       break;
-    case "cert__aws":
+    case "cert__aws--practitioner":
       $('.section--about #article3 iframe#embedded-badge-e774c874-b199-4a66-a7a3-71cb107a44ea').show();
+      break;
+    case "cert__aws--developer":
+      $('.section--about #article3 iframe#embedded-badge-3dab972c-820b-4833-b762-2251b66324ae').show();
       break;
   }
 }
